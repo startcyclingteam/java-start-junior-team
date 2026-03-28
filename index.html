@@ -267,5 +267,21 @@ document.querySelectorAll('.gallery-item img').forEach(img => {
   });
 });
 </script>
+  <script>
+let lastScroll = 0;
+const header = document.querySelector('.site-header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    header.style.transform = 'translateY(0)';
+  }
+
+  lastScroll = currentScroll;
+});
+</script>
 </body>
 </html>
