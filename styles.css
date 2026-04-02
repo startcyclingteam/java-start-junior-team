@@ -351,10 +351,10 @@ h2{
 }
 .watermark-simple{
   display:block;
-  margin-top:-140px;
+  margin-top:-260px;
   margin-left:auto;
   margin-right:auto;
-  height:200px;
+  height:260px;
   opacity:0.12;
   pointer-events:none;
 }
